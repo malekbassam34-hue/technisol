@@ -1,7 +1,8 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import React from "react";
+import ViewportSwitcher from "./ViewportSwitcher";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -15,6 +16,11 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://technisol.example"),
 };
 
+export const viewport: Viewport = {
+  width: 1280,
+  userScalable: true,
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,7 +31,10 @@ export default function RootLayout({
       lang="fr"
       className={`${geistSans.variable} h-full antialiased bg-white text-slate-900`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+  <ViewportSwitcher />
+  {children}
+</body>
     </html>
   );
 }
