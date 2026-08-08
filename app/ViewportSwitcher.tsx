@@ -9,11 +9,12 @@ export default function ViewportSwitcher() {
   const [mode, setMode] = useState<ViewMode>("desktop");
 
   useEffect(() => {
-    const mobileDevice =
-      /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  const mobileDevice =
+    /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent) ||
+    window.screen.width <= 768;
 
-    setIsPhone(mobileDevice);
-  }, []);
+  setIsPhone(mobileDevice);
+}, []);
 
   const changeView = (newMode: ViewMode) => {
     const viewport = document.querySelector(
