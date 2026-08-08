@@ -118,7 +118,7 @@ const closeLightbox = () => {
 
         onClick={onClose}
 
-       className="fixed inset-0 z-[99999] flex items-center justify-center bg-gradient-to-br from-sky-900/35 via-cyan-800/25 to-slate-900/40 backdrop-blur-md overflow-hidden p-4"
+       className="fixed inset-0 z-[99999] flex items-center justify-center overflow-hidden bg-gradient-to-br from-sky-900/35 via-cyan-800/25 to-slate-900/40 p-2 backdrop-blur-md sm:p-4"
 
       >
 
@@ -147,18 +147,18 @@ const closeLightbox = () => {
             duration: .35,
           }}
 
-className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cyan-200/30 bg-gradient-to-br from-[#0d3b66] via-[#12618e] to-[#1d8fbd] shadow-[0_40px_120px_rgba(0,0,0,.35)] lg:w-[84vw] lg:max-w-[1450px] lg:max-h-[90vh] lg:overflow-hidden lg:rounded-[32px]">
+className="w-full max-w-[calc(100vw-1rem)] max-h-[96vh] overflow-y-auto overflow-x-hidden rounded-[24px] border border-cyan-200/30 bg-gradient-to-br from-[#0d3b66] via-[#12618e] to-[#1d8fbd] shadow-[0_40px_120px_rgba(0,0,0,.35)] sm:max-w-[calc(100vw-2rem)] sm:max-h-[94vh] sm:rounded-[28px] lg:w-[84vw] lg:max-w-[1450px] lg:max-h-[90vh] lg:overflow-hidden lg:rounded-[32px]">
                    {/* HERO */}
-          <div className="grid grid-cols-1 gap-4 px-4 pt-4 sm:px-6 lg:grid-cols-[40%_60%] lg:gap-6 lg:px-8 lg:pt-7">
+          <div className="grid min-w-0 grid-cols-1 gap-4 px-3 pt-3 sm:px-6 sm:pt-4 lg:grid-cols-[40%_60%] lg:gap-6 lg:px-8 lg:pt-7">
 
             {/* LEFT SIDE */}
-            <div className="relative flex flex-col justify-center rounded-[22px] bg-white/5 px-5 py-5 sm:px-6 lg:rounded-[26px] lg:px-8 lg:py-6">
+            <div className="relative min-w-0 flex flex-col justify-center rounded-[22px] bg-white/5 px-4 py-4 sm:px-6 sm:py-5 lg:rounded-[26px] lg:px-8 lg:py-6">
 
               <span className="w-fit rounded-full bg-cyan-400 px-5 py-2 text-[11px] font-black uppercase tracking-[0.18em] text-[#04152d]">
                 {badge}
               </span>
 
-              <h1 className="mt-4 text-3xl font-black leading-tight text-white sm:text-4xl lg:mt-5 lg:text-5xl">
+              <h1 className="mt-4 max-w-full break-words text-2xl font-black leading-tight text-white sm:text-4xl lg:mt-5 lg:text-5xl">
                 {title}
               </h1>
 
@@ -169,7 +169,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
             </div>
 
             {/* RIGHT SIDE */}
-            <div className="relative">
+            <div className="relative min-w-0">
 
               <button
                 onClick={onClose}
@@ -222,7 +222,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
                     <button
                       key={img}
                       onClick={() => setActiveImage(img)}
-                      className={`overflow-hidden rounded-[14px] border-2 transition-all duration-300 ${
+                      className={`shrink-0 overflow-hidden rounded-[14px] border-2 transition-all duration-300 ${
                         activeImage === img
                           ? "scale-105 border-cyan-300"
                           : "border-transparent opacity-70 hover:opacity-100"
@@ -256,7 +256,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
               <button
                 onClick={() => setTab("description")}
-                className={`rounded-full px-5 py-2 text-sm font-bold transition ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold transition ${
                   tab === "description"
                     ? "bg-cyan-400 text-[#04152d]"
                     : "bg-white/5 text-white hover:bg-white/10"
@@ -267,7 +267,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
               <button
                 onClick={() => setTab("specs")}
-                className={`rounded-full px-5 py-2 text-sm font-bold transition ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold transition ${
                   tab === "specs"
                     ? "bg-cyan-400 text-[#04152d]"
                     : "bg-white/5 text-white hover:bg-white/10"
@@ -278,7 +278,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
               <button
                 onClick={() => setTab("dimensions")}
-                className={`rounded-full px-5 py-2 text-sm font-bold transition ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold transition ${
                   tab === "dimensions"
                     ? "bg-cyan-400 text-[#04152d]"
                     : "bg-white/5 text-white hover:bg-white/10"
@@ -289,7 +289,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
               <button
                 onClick={() => setTab("docs")}
-                className={`rounded-full px-5 py-2 text-sm font-bold transition ${
+                className={`shrink-0 whitespace-nowrap rounded-full px-5 py-2 text-sm font-bold transition ${
                   tab === "docs"
                     ? "bg-cyan-400 text-[#04152d]"
                     : "bg-white/5 text-white hover:bg-white/10"
@@ -365,9 +365,9 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
               >
 
-                <div className="grid gap-7 lg:grid-cols-2">
+                <div className="grid min-w-0 gap-4 sm:gap-7 lg:grid-cols-2">
 
-                  <div className="rounded-[28px] bg-white/5 p-8">
+                  <div className="min-w-0 rounded-[22px] bg-white/5 p-5 sm:rounded-[28px] sm:p-8">
 
                     <p className="font-bold text-cyan-300">
 
@@ -375,7 +375,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
                     </p>
 
-                    <p className="mt-4 text-xl text-white">
+                    <p className="mt-4 max-w-full break-words text-base text-white sm:text-xl">
 
                       {thickness}
 
@@ -383,7 +383,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
                   </div>
 
-                  <div className="rounded-[28px] bg-white/5 p-8">
+                  <div className="min-w-0 rounded-[22px] bg-white/5 p-5 sm:rounded-[28px] sm:p-8">
 
                     <p className="font-bold text-cyan-300">
 
@@ -391,7 +391,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
                     </p>
 
-                    <p className="mt-4 text-xl text-white">
+                    <p className="mt-4 max-w-full break-words text-base text-white sm:text-xl">
 
                       {dimensions}
 
@@ -399,7 +399,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
                   </div>
 
-                  <div className="rounded-[28px] bg-white/5 p-8">
+                  <div className="min-w-0 rounded-[22px] bg-white/5 p-5 sm:rounded-[28px] sm:p-8">
 
                     <p className="font-bold text-cyan-300">
 
@@ -407,7 +407,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
                     </p>
 
-                    <p className="mt-4 text-xl text-white">
+                    <p className="mt-4 max-w-full break-words text-base text-white sm:text-xl">
 
                       {density}
 
@@ -415,7 +415,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
                   </div>
 
-                  <div className="rounded-[28px] bg-white/5 p-8">
+                  <div className="min-w-0 rounded-[22px] bg-white/5 p-5 sm:rounded-[28px] sm:p-8">
 
                     <p className="font-bold text-cyan-300">
 
@@ -423,7 +423,7 @@ className="w-[94vw] max-h-[94vh] overflow-y-auto rounded-[28px] border border-cy
 
                     </p>
 
-                    <p className="mt-4 text-xl text-white">
+                    <p className="mt-4 max-w-full break-words text-base text-white sm:text-xl">
 
                       {application}
 

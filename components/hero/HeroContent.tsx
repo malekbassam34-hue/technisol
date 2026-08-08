@@ -40,7 +40,7 @@ export default function HeroContent({
 
       <div className="mt-4 mb-1 text-center">
 
-        <span className="text-[42px] font-black tracking-[0.42em] text-white drop-shadow-lg">
+        <span className="text-[28px] font-black tracking-[0.28em] text-white drop-shadow-lg sm:text-[36px] sm:tracking-[0.36em] lg:text-[42px] lg:tracking-[0.42em]">
           SARL
         </span>
 
@@ -48,13 +48,13 @@ export default function HeroContent({
 
       {/* TECHNISOL */}
 
-      <h1 className="text-center text-7xl font-black leading-none tracking-tight text-white lg:text-8xl">
+      <h1 className="w-full break-words text-center text-[44px] font-black leading-none tracking-tight text-white sm:text-6xl md:text-7xl lg:text-8xl">
         TECHNISOL
       </h1>
 
       {/* Sous titre */}
 
-      <h2 className="mt-4 max-w-xl text-[38px] font-bold leading-[1.15] text-white">
+      <h2 className="mt-4 max-w-xl text-[25px] font-bold leading-[1.2] text-white sm:text-[32px] lg:text-[38px] lg:leading-[1.15]">
         Isolation industrielle
         <br />
         et solutions PSE
@@ -64,7 +64,7 @@ export default function HeroContent({
 
       {/* Description */}
 
-      <p className="mt-7 max-w-xl text-[20px] leading-10 text-white/90">
+      <p className="mt-6 max-w-xl text-[16px] leading-7 text-white/90 sm:text-[18px] sm:leading-8 lg:mt-7 lg:text-[20px] lg:leading-10">
         Nous concevons des solutions d'isolation thermique
         et industrielle à haut rendement destinées
         aux professionnels, aux entreprises
@@ -73,19 +73,19 @@ export default function HeroContent({
 
       {/* Line */}
 
-      <div className="mt-9 flex items-center gap-5">
+      <div className="mt-7 flex min-w-0 items-center gap-3 sm:mt-9 sm:gap-5">
 
-        <span className="text-sm font-bold uppercase tracking-[0.35em] text-cyan-300">
+        <span className="shrink-0 text-xs font-bold uppercase tracking-[0.24em] text-cyan-300 sm:text-sm sm:tracking-[0.35em]">
           Depuis 1997
         </span>
 
-        <div className="h-[2px] w-28 rounded-full bg-cyan-400" />
+        <div className="h-[2px] w-16 rounded-full bg-cyan-400 sm:w-28" />
 
       </div>
 
       {/* Bottom text */}
 
-      <p className="mt-5 max-w-xl text-[17px] leading-8 text-white/70">
+      <p className="mt-5 max-w-xl text-[15px] leading-7 text-white/70 sm:text-[16px] sm:leading-8 lg:text-[17px]">
         TECHNISOL accompagne les professionnels
         avec des solutions innovantes
         en polystyrène expansé (PSE),

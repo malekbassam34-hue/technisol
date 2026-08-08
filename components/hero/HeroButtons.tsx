@@ -19,11 +19,11 @@ export default function HeroButtons() {
         transition={{
           delay: 0.65,
         }}
-        className="mt-12 flex flex-wrap gap-5"
+        className="mt-8 flex w-full flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-5 lg:mt-12"
       >
         <Link
           href="#contact"
-          className="group inline-flex items-center gap-3 rounded-full bg-gradient-to-r from-cyan-400 to-sky-500 px-8 py-4 text-white font-semibold shadow-[0_10px_35px_rgba(0,190,255,.35)] transition hover:scale-105"
+          className="group inline-flex w-full items-center justify-center gap-3 rounded-full bg-gradient-to-r from-cyan-400 to-sky-500 px-5 py-4 font-semibold text-white shadow-[0_10px_35px_rgba(0,190,255,.35)] transition hover:scale-105 sm:w-auto sm:px-8"
         >
           Demander un devis
 
@@ -35,7 +35,7 @@ export default function HeroButtons() {
 
         <Link
           href="#products"
-          className="group inline-flex items-center gap-3 rounded-full border border-cyan-400/20 bg-white/5 px-8 py-4 text-white font-semibold backdrop-blur-xl transition hover:bg-white/10"
+          className="group inline-flex w-full items-center justify-center gap-3 rounded-full border border-cyan-400/20 bg-white/5 px-5 py-4 font-semibold text-white backdrop-blur-xl transition hover:bg-white/10 sm:w-auto sm:px-8"
         >
           Nos produits
 
@@ -58,7 +58,7 @@ export default function HeroButtons() {
         transition={{
           delay: 0.85,
         }}
-        className="mt-12 flex flex-wrap gap-4"
+        className="mt-8 flex max-w-full flex-wrap gap-2 sm:mt-12 sm:gap-4"
       >
         {[
           "Depuis 1997",
@@ -67,7 +67,7 @@ export default function HeroButtons() {
         ].map((item) => (
           <div
             key={item}
-            className="rounded-full border border-white/10 bg-white/5 px-6 py-3 text-sm text-slate-200 backdrop-blur-xl"
+            className="max-w-full rounded-full border border-white/10 bg-white/5 px-4 py-3 text-xs text-slate-200 backdrop-blur-xl sm:px-6 sm:text-sm"
           >
             {item}
           </div>
