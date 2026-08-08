@@ -28,7 +28,7 @@ export default function About() {
 
       </div>
 
-      <div className="relative z-10 mx-auto max-w-7xl px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-8 max-sm:px-4">
 
         {/* Heading */}
 
@@ -46,7 +46,7 @@ export default function About() {
 
           </span>
 
-          <h2 className="mt-10 text-7xl font-black leading-[1.05] text-white drop-shadow-[0_6px_25px_rgba(0,0,0,.45)]">
+          <h2 className="mt-10 text-7xl font-black leading-[1.05] text-white drop-shadow-[0_6px_25px_rgba(0,0,0,.45)] max-sm:text-[40px] max-sm:leading-[1.1]">
 
             Plus de
 
@@ -60,7 +60,7 @@ export default function About() {
 
           </h2>
 
-          <p className="mx-auto mt-8 max-w-4xl text-[21px] leading-10 text-white/85">
+          <p className="mx-auto mt-8 max-w-4xl text-[21px] leading-10 text-white/85 max-sm:text-[16px] max-sm:leading-7">
 
             Depuis 1997, TECHNISOL accompagne les professionnels
             avec des solutions innovantes en polystyrène expansé,
@@ -123,7 +123,7 @@ export default function About() {
 
             </span>
 
-            <h2 className="mt-8 text-6xl font-black leading-[1.05] text-white drop-shadow-[0_5px_20px_rgba(0,0,0,.4)]">
+            <h2 className="mt-8 text-6xl font-black leading-[1.05] text-white drop-shadow-[0_5px_20px_rgba(0,0,0,.4)] max-sm:text-[40px] max-sm:leading-[1.08] max-sm:break-words">
 
               Depuis 1997,
 
@@ -139,7 +139,7 @@ export default function About() {
 
             </h2>
 
-            <p className="mt-8 text-lg leading-9 text-slate-300">
+            <p className="mt-8 text-lg leading-9 text-slate-300 max-sm:text-[16px] max-sm:leading-8 max-sm:break-words">
 
               SARL TECHNISOL est une entreprise algérienne spécialisée
               dans la fabrication de polystyrène expansé (PSE),
@@ -149,7 +149,7 @@ export default function About() {
 
             </p>
 
-            <p className="mt-6 text-lg leading-9 text-slate-300">
+            <p className="mt-6 text-lg leading-9 text-slate-300 max-sm:text-[16px] max-sm:leading-8 max-sm:break-words">
 
               Grâce à des équipements modernes,
               une équipe expérimentée

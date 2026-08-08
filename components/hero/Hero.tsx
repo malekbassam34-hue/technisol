@@ -108,10 +108,10 @@ export default function Hero() {
         }}
         className="relative z-20 pt-6"
       >
-        <div className="relative z-20 mx-auto flex min-h-screen w-full max-w-7xl items-center px-4 pt-6 sm:px-6 lg:px-8">
-          <div className="grid w-full min-w-0 items-center gap-10 lg:grid-cols-[1.18fr_.82fr] lg:gap-20">
-            <div className="min-w-0">
-
+        <div className="relative z-20 mx-auto flex min-h-screen max-w-7xl items-center px-8 pt-6">
+        <div className="grid w-full items-center gap-20 lg:grid-cols-[1.18fr_.82fr]">
+            <div>
+<HeroContent contentOpacity={contentOpacity} />
               <HeroButtons />
 
               <HeroBadges />

@@ -11,7 +11,7 @@ export default function CTA() {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8 }}
-      className="relative mt-36 overflow-hidden rounded-[42px] border border-cyan-400/20 bg-white/[0.05] p-14 backdrop-blur-3xl"
+      className="relative mt-36 overflow-hidden rounded-[42px] border border-cyan-400/20 bg-white/[0.05] p-14 backdrop-blur-3xl max-sm:mt-20 max-sm:rounded-[28px] max-sm:p-5"
     >
       {/* Background Glow */}
 
@@ -25,13 +25,13 @@ export default function CTA() {
 
         <div>
 
-          <span className="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-6 py-2 text-sm font-bold uppercase tracking-[.30em] text-cyan-300">
+          <span className="rounded-full border border-cyan-400/20 bg-cyan-500/10 px-6 py-2 text-sm font-bold uppercase tracking-[.30em] text-cyan-300 max-sm:inline-flex max-sm:px-4 max-sm:text-[11px] max-sm:tracking-[.20em]">
 
             SARL TECHNISOL
 
           </span>
 
-          <h2 className="mt-8 text-5xl font-black leading-tight text-white">
+          <h2 className="mt-8 text-5xl font-black leading-tight text-white max-sm:text-[36px] max-sm:leading-[1.15]">
 
             Construisons ensemble
 
@@ -45,7 +45,7 @@ export default function CTA() {
 
           </h2>
 
-          <p className="mt-8 max-w-3xl text-lg leading-9 text-slate-300">
+          <p className="mt-8 max-w-3xl text-lg leading-9 text-slate-300 max-sm:text-[16px] max-sm:leading-8">
 
             Depuis plus de 28 ans, TECHNISOL accompagne les entreprises,
             les professionnels et les industriels avec des solutions
@@ -56,11 +56,11 @@ export default function CTA() {
 
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 max-sm:w-full">
 
           <Link
             href="#contact"
-            className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-10 py-5 text-lg font-bold text-white shadow-[0_25px_60px_rgba(14,165,233,.35)] transition-all duration-300 hover:scale-105"
+            className="group inline-flex items-center justify-center gap-3 rounded-full bg-gradient-to-r from-cyan-400 to-blue-500 px-10 py-5 text-lg font-bold text-white shadow-[0_25px_60px_rgba(14,165,233,.35)] transition-all duration-300 hover:scale-105 max-sm:w-full max-sm:px-5 max-sm:py-4 max-sm:text-base"
           >
 
             Demander un devis
@@ -74,7 +74,7 @@ export default function CTA() {
 
           <Link
             href="#products"
-            className="inline-flex items-center justify-center rounded-full border border-cyan-400/20 bg-white/5 px-10 py-5 text-lg font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-300 hover:bg-cyan-500/10"
+            className="inline-flex items-center justify-center rounded-full border border-cyan-400/20 bg-white/5 px-10 py-5 text-lg font-semibold text-white backdrop-blur-xl transition-all duration-300 hover:border-cyan-300 hover:bg-cyan-500/10 max-sm:w-full max-sm:px-5 max-sm:py-4 max-sm:text-base"
           >
 
             Découvrir nos produits

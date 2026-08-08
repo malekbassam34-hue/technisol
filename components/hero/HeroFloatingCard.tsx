@@ -17,9 +17,9 @@ export default function HeroFloatingCard() {
         duration: 0.9,
         delay: 0.45,
       }}
-      className="relative flex min-w-0 justify-end pt-4 sm:pt-6"
+      className="relative flex justify-end -translate-y-16 max-sm:translate-y-0 max-sm:justify-center"
     >
-      <div className="relative w-full min-w-0 max-w-[470px]">
+      <div className="relative w-full min-w-0 max-w-[470px] max-sm:max-w-full">
 
         {/* Glow */}
         <div className="absolute inset-0 rounded-[44px] bg-cyan-400/22 blur-[70px] scale-110" />
@@ -43,19 +43,19 @@ export default function HeroFloatingCard() {
             className="absolute top-0 left-0 h-full w-24 bg-gradient-to-r from-transparent via-white/15 to-transparent blur-xl"
           />
 
-          <div className="relative z-10 px-5 py-8 sm:px-7 sm:py-10 lg:px-10 lg:py-16">
+          <div className="relative z-10 px-5 py-8 sm:px-7 sm:py-10 lg:px-10 lg:py-6 max-sm:px-5 max-sm:py-7">
 
-            <span className="text-[10px] font-bold uppercase tracking-[0.20em] text-cyan-200 sm:text-[11px] sm:tracking-[0.38em]">
+            <span className="text-[11px] font-bold uppercase tracking-[0.38em] text-cyan-200 max-sm:text-[9px] max-sm:tracking-[0.22em]">
               SOLUTIONS INDUSTRIELLES
             </span>
 
-            <h3 className="mt-4 text-[27px] font-bold leading-tight text-white sm:text-[32px] lg:text-[38px]">
+            <h3 className="mt-4 text-[38px] font-bold leading-tight text-white max-sm:text-[30px]">
               Performance,
               <br />
               qualité et innovation.
             </h3>
 
-            <p className="mt-4 text-[15px] leading-8 text-white/82">
+            <p className="mt-4 text-[15px] leading-8 text-white/82 max-sm:text-[14px] max-sm:leading-7">
               Une fabrication moderne,
               un contrôle qualité rigoureux
               et des matériaux performants
@@ -66,7 +66,7 @@ export default function HeroFloatingCard() {
 
             {/* Stats */}
 
-            <div className="mt-6 grid min-w-0 grid-cols-2 gap-3 sm:mt-8 sm:gap-5">
+            <div className="mt-8 grid grid-cols-2 gap-5 max-sm:gap-3">
 
               {[
                 ["28+", "Années"],
@@ -79,9 +79,9 @@ export default function HeroFloatingCard() {
                   whileHover={{
                     scale: 1.05,
                   }}
-                  className="min-w-0 rounded-[18px] border border-white/10 bg-white/8 p-4 backdrop-blur-md sm:rounded-[22px] sm:p-6"
+                  className="rounded-[22px] border border-white/10 bg-white/8 p-6 backdrop-blur-md max-sm:p-4"
                 >
-                  <div className="text-[28px] font-black text-white sm:text-[36px] lg:text-[44px]">
+                  <div className="text-[44px] font-black text-white">
                     {value}
                   </div>
 
@@ -95,7 +95,7 @@ export default function HeroFloatingCard() {
 
             {/* Bottom */}
 
-            <div className="mt-7 rounded-[20px] border border-cyan-300/15 bg-gradient-to-br from-cyan-400/10 to-sky-500/10 p-4 sm:mt-10 sm:rounded-[24px] sm:p-7">
+            <div className="mt-10 rounded-[24px] border border-cyan-300/15 bg-gradient-to-br from-cyan-400/10 to-sky-500/10 p-7 max-sm:mt-7 max-sm:p-5">
 
               <div className="flex items-center gap-3">
 
@@ -107,7 +107,7 @@ export default function HeroFloatingCard() {
 
               </div>
 
-              <div className="mt-5 grid grid-cols-3 gap-2 sm:gap-4">
+              <div className="mt-5 grid grid-cols-3 gap-4">
 
                 <div className="flex flex-col items-center gap-2">
 
