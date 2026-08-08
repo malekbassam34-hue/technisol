@@ -81,7 +81,7 @@ export default function HeroFloatingCard() {
                   }}
                   className="rounded-[22px] border border-white/10 bg-white/8 p-6 backdrop-blur-md max-sm:p-4"
                 >
-                  <div className="text-[44px] font-black text-white">
+                  <div className="text-[44px] font-black text-white max-sm:text-[28px] max-sm:tracking-tight">
                     {value}
                   </div>
 
